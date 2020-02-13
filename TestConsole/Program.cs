@@ -15,12 +15,12 @@ namespace TestConsole
             Console.Write("Enter number y > ");
             string y_str = Console.ReadLine();
 
-            int x = int.Parse(x_str);
-            int y = int.Parse(y_str);
+            double x = double.Parse(x_str);
+            double y = double.Parse(y_str);
 
-            int z = x + y;
+            double z = x / y;
 
-            Console.WriteLine($"{x} + {y} = {z}");
+            Console.WriteLine($"{x} / {y} = {z:F18}");
             Console.ReadLine();
         }
     }
